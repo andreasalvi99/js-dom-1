@@ -6,4 +6,12 @@ console.log(lightUp);
 
 switchButton.addEventListener("click", function () {
   lightUp.src = "./img/yellow_lamp.png";
+  switchButton.innerHTML = "Spegni";
+
+  if ((switchButton.innerHTML = "Spegni")) {
+    switchButton.addEventListener("click", function () {
+      lightUp.src = "./img/white_lamp.png";
+      switchButton.innerHTML = "Accendi";
+    });
+  }
 });
