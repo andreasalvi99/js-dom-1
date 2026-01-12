@@ -24,5 +24,11 @@ switchButton.addEventListener("click", function () {
     lightUp.src = "";
     lightUp.alt = "";
     main.innerHTML = "Si è fulminata :(";
+
+    switchButton.addEventListener("click", function () {
+      alert(
+        "E' inutile che continui a cliccare, non vedi che la lampadina si è fulminata?!?!"
+      );
+    });
   }
 });
